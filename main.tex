@@ -1,0 +1,94 @@
+% !TeX TS-program = xelatex
+
+\documentclass{beamer}
+\usetheme{metropolis}
+
+\usepackage{multicol}
+
+\usepackage{ragged2e} % who justifies the text
+\usepackage{xecolor}
+\usepackage{amsmath}
+%\usefonttheme[onlymath]{serif} %Change the math font
+
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage[style=numeric,sorting=ynt]{biblatex}
+
+%---------------------------------------------------------------------------------
+\title{A Short Introduction to DetNet}
+\subtitle{}
+\author{Parham Alvani}
+\institute{
+        Computer Engineering Department\\
+        Prof.\ Bahador Bakhshi
+}
+\date{\today}
+
+\begin{document}
+
+\makeatletter
+\setbeamertemplate{title page}{
+  \begin{minipage}[b][\paperheight]{\textwidth}
+    \begin{center}
+        \ifx\inserttitlegraphic\@empty\else\usebeamertemplate*{title graphic}\fi
+    \end{center}
+    \vfill%
+    \ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi
+    \ifx\insertsubtitle\@empty\else\usebeamertemplate*{subtitle}\fi
+    \usebeamertemplate*{title separator}
+    \ifx\beamer@shortauthor\@empty\else\usebeamertemplate*{author}\fi
+    \ifx\insertdate\@empty\else\usebeamertemplate*{date}\fi
+    \ifx\insertinstitute\@empty\else\usebeamertemplate*{institute}\fi
+    \vspace*{5mm}
+    \begin{center}
+        \includegraphics[width=1cm]{images/logo}
+    \end{center}
+    \vfill
+    \vspace*{1mm}
+  \end{minipage}
+}
+
+\setbeamertemplate{title}{
+%  \raggedright%  % <-- Comment here
+  \linespread{1.0}%
+  \inserttitle%
+  \par%
+  \vspace*{0.5em}
+}
+\setbeamertemplate{subtitle}{
+%  \raggedright%  % <-- Comment here
+  \insertsubtitle%
+  \par%
+  \vspace*{0.5em}
+}
+
+\setbeamertemplate{section page}{
+    \begin{center}
+        \insertsectionnumber. \insertsection
+    \end{center}
+    \usebeamertemplate*{title separator}
+}
+\makeatother
+
+%------------------------------------------
+% Title frame (0)
+%------------------------------------------
+{
+\setbeamertemplate{headline}[default]
+\begin{frame}
+    \titlepage{}
+\end{frame}
+}
+
+%-------------------------------------------------------------------------------
+\begin{frame}{Table of Contents}
+    \tableofcontents
+\end{frame}
+
+%-------------------------------------------------------------------------------
+\begin{frame}{}
+    \section{Introduction}
+\end{frame}
+
+\end{document}
