@@ -20,25 +20,32 @@
 % To force beamer use numbering in captions
 \setbeamertemplate{caption}[numbered]{}% Number float-like environments
 
-\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{footline}
+{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+      \usebeamerfont{date in head/foot}\insertsection\hspace*{2em}
+      \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+    \end{beamercolorbox}
+  }%
+}
 \setbeamertemplate{section in toc}[circle]
 \setbeamertemplate{blocks}[rounded][shadow=true]
 \setbeamercolor{block title}{bg=orange}
 \setbeamercolor{block body}{bg=lightgray}
-\setbeamercolor{headline}{bg=orange}
 \setbeamersize{text margin left=1cm,text margin right=1cm}
-
-\setbeamertemplate{headline}
-{%
-  \begin{beamercolorbox}{section in head/foot}
-    \vspace{2pt}\insertnavigation{\paperwidth}\vspace{2pt}
-  \end{beamercolorbox}
-}
 
 %---------------------------------------------------------------------------------
 \title{A Short Introduction to DetNet}
 \subtitle{}
-\author{Parham Alvani}
+\author[Parham A.]{Parham Alvani}
 \institute{%
   Computer Engineering Department\\
   Prof.\ Bahador Bakhshi
@@ -78,13 +85,21 @@
   \vspace*{0.5em}
 }
 
-\setbeamertemplate{section page}{%
-  \begin{center}
-    \insertsectionnumber. \insertsection%
-  \end{center}
-  \usebeamertemplate*{title separator}
+\AtBeginSection[]
+{%
+  \begin{frame}{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+  \begin{frame}
+    \begin{center}
+      \insertsectionnumber. \insertsection%
+    \end{center}
+    \usebeamertemplate*{title separator}
+  \end{frame}
 }
+
 \makeatother
+
 
 %------------------------------------------
 % Title frame (0)
@@ -97,14 +112,12 @@
 }
 
 %-------------------------------------------------------------------------------
-\begin{frame}{Table of Contents}
-  \tableofcontents
+\begin{frame}{Outline}
+  \tableofcontents[pausesections]
 \end{frame}
 
 %-------------------------------------------------------------------------------
-\begin{frame}{}
-  \section{Introduction}
-\end{frame}
+\section{Introduction}
 
 %-------------------------------------------------------------------------------
 \begin{frame}{}
