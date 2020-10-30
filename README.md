@@ -1,4 +1,4 @@
-# How to use DetNet for your PhD thesis?
+# How to use Fog Computing for your PhD thesis?
 
 ## Introduction
 Here, I want to summarize my experiences and reading list that I use to find a problem and provide an abstraction about the way to solve it as a Ph.D. Thesis.
