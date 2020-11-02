@@ -14,7 +14,41 @@
 \usepackage{booktabs}
 \usepackage[style=numeric,sorting=ynt]{biblatex}
 \addbibresource{references.bib}
+\usepackage{xepersian}
+\settextfont{Vazir}
+\setlatintextfont{Roboto}
 
+
+%---------------------------------------------------------------------------------
+% Seetings to force Beamer works with Xepersian and RTL typesetting
+%-------------------------------------------------------------------------------
+%\raggedleft
+
+% For right to left lists (itemize and enumerate)
+\makeatletter
+\newcommand{\RTList}{\raggedleft\rightskip\@totalleftmargin}
+\makeatother
+% Correct the bullet for RTL texts
+\setbeamertemplate{itemize item}{\scriptsize\raise1.25pt%
+ \hbox{\donotcoloroutermaths$\blacktriangleleft$}} 
+
+% To force beamer use numbering in captions
+\setbeamertemplate{caption}[numbered]{}% Number float-like environments
+
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{section in toc}[circle]
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamercolor{block body}{bg=lightgray}
+\setbeamercolor{headline}{bg=orange}
+\setbeamersize{text margin left=1cm,text margin right=1cm}
+
+\setbeamertemplate{headline}
+{
+    \begin{beamercolorbox}{section in head/foot}
+        \vspace{2pt}\insertnavigation{\paperwidth}\vspace{2pt}
+    \end{beamercolorbox}
+}
+  
 %---------------------------------------------------------------------------------
 % To force beamer use numbering in captions
 \setbeamertemplate{caption}[numbered]{}% Number float-like environments
@@ -42,35 +76,19 @@
 \setbeamersize{text margin left=1cm,text margin right=1cm}
 
 %---------------------------------------------------------------------------------
-\title{A Short Introduction to DetNet}
+\title{جایگذاری کارکردهای همراه لبه در بستر کارکاردهای مجازی شبکه}
 \subtitle{}
-\author[Parham A.]{Parham Alvani}
+\author{پرهام الوانی}
 \institute{%
-  Computer Engineering Department\\
-  Prof.\ Bahador Bakhshi
+    دانشکده مهندسی کامپیوتر\\
+    دکتر بهادر بخشی
 }
 \date{\today}
-\titlegraphic{\includegraphics[height=50pt]{images/logo}}
+\titlegraphic{\vspace{4.5cm}\flushleft\includegraphics[height=50pt]{images/logo}}
 
 \begin{document}
 
 \makeatletter
-\setbeamertemplate{title page}{%
-  \begin{minipage}[b][\paperheight]{\textwidth}
-    \begin{flushright}
-      \ifx\inserttitlegraphic\empty\else\usebeamertemplate*{title graphic}\fi
-    \end{flushright}
-    \vfill%
-    \ifx\inserttitle\empty\else\usebeamertemplate*{title}\fi
-    \ifx\insertsubtitle\empty\else\usebeamertemplate*{subtitle}\fi
-    \usebeamertemplate*{title separator}
-    \ifx\beamershortauthor\empty\else\usebeamertemplate*{author}\fi
-    \ifx\insertdate\empty\else\usebeamertemplate*{date}\fi
-    \ifx\insertinstitute\empty\else\usebeamertemplate*{institute}\fi
-    \vfill
-    \vspace*{1mm}
-  \end{minipage}
-}
 
 \setbeamertemplate{title}{%
   \linespread{1.0}%
@@ -86,7 +104,7 @@
 
 \AtBeginSection[]
 {%
-  \begin{frame}{Outline}
+  \begin{frame}{فهرست}
     \tableofcontents[currentsection]
   \end{frame}
   \begin{frame}
@@ -100,6 +118,7 @@
 \makeatother
 
 
+\begin{persian}
 %------------------------------------------
 % Title frame (0)
 %------------------------------------------
@@ -111,54 +130,42 @@
 }
 
 %-------------------------------------------------------------------------------
-\begin{frame}{Outline}
+\begin{frame}{فهرست}
   \tableofcontents[pausesections]
 \end{frame}
 
 %-------------------------------------------------------------------------------
-\section{Introduction}
+\section{مقدمه}
 
 %-------------------------------------------------------------------------------
 \begin{frame}{}
-  \begin{block}{Goal}
-    \par
-    Establishes multi-hop paths for characterized flows with deterministic properties:
-    \begin{itemize}
-      \item Latency Guarantess
-      \item Ultra-Low Packet Loss
-    \end{itemize}
-  \end{block}
-
-  \begin{block}{Layers}
-    \par
-    DetNet operates at the IP layer and delivers service over lower-layer technologies such as MPLS and Time-Sensitive Networking (TSN).
-  \end{block}
-\end{frame}
-
-%-------------------------------------------------------------------------------
-\begin{frame}{Techniques}
-  \par
-  Techniquies for providing DetNet Qualities of Service:~\cite{Finn2019}
-  \begin{itemize}
-    \item Resource Allocation
-      \begin{itemize}
-        \item Assigning Resources
-      \end{itemize}
-    \item Service Protection
-      \begin{itemize}
-        \item Packet Replication and Elimination
-        \item Packet Encoding
-      \end{itemize}
-    \item Explicit Routes
+  \begin{itemize}\RTList
+    \justifying
+    \item اینترنت اشیا اجازه اتصال میلیون شی به یکدیگر و کاربران را می‌دهد.
+    \item این داده توسط سرورهای ابری مدیریت می‌شود.
+    \item خرابی در لینک بین سرورهای ابری و لایه اینترنت اشیا می‌تواند سرویس را قطع کند.
+    \item سرورهای ابری کاربران را بابت پردازش داده‌ها و ... شارژ می‌کنند.
+    \item پردازش لبه قصد دارد هزینه‌های پردازش، نگهداری و انتقال داده تا سرورهای ابری را کاهش دهد.
   \end{itemize}
 \end{frame}
 
 %-------------------------------------------------------------------------------
-\section{References}
+\begin{frame}{}
+  \begin{itemize}\RTList
+    \justifying
+    \item اشتراک‌گذاری زیرساخت فیزیکی شبکه
+    \item شبکه‌های نرم‌افزار بنیان
+    \item مجازی‌سازی کارکردهای شبکه
+  \end{itemize}
+\end{frame}
+
+%-------------------------------------------------------------------------------
+\section{مراجع}
 
 %-------------------------------------------------------------------------------
 \begin{frame}{}
   \printbibliography%
 \end{frame}
 
+\end{persian}
 \end{document}
