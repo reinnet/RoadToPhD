@@ -10,4 +10,7 @@ Here, I want to summarize my experiences and reading list that I use to find a p
 
 ### NFV/SDN
 - ![](https://img.shields.io/badge/status-in--progress-yellow?style=flat-square) [Deterministic Quality of Service Guarantee for Dynamic Service Chaining in Software Defined Networking
-]()https://doi.org/10.1109/TNSM.2017.2758328
+](https://doi.org/10.1109/TNSM.2017.2758328)
+
+- ![](https://img.shields.io/badge/status-in--progress-yellow?style=flat-square) [Recent Advances of Resource Allocation in Network Function Virtualization
+](https://doi.org/10.1109/TPDS.2020.3017001)
