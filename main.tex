@@ -71,7 +71,7 @@
 		\end{beamercolorbox}%
 		\begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
 			\usebeamerfont{date in head/foot}\insertsection\hspace*{2em}
-			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+			\insertframenumber~ از \inserttotalframenumber{} \hspace*{2ex}%
 		\end{beamercolorbox}
 	}%
 }
@@ -291,7 +291,7 @@
 	%-------------------------------------------------------------------------------
 	\begin{frame}{اهداف}
 		\begin{itemize}\RTList{}
-			\justifying
+			\justifying%
 			\item هزینه
 						\begin{itemize}\RTList{}
 							\item مساله‌ی پایه‌ای در بحث تخصیص منابع
@@ -309,6 +309,20 @@
 						\end{itemize}
 							\item دسترسی پذیری
 						\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	%-------------------------------------------------------------------------------
+	\begin{frame}{مدل‌سازی}
+		\begin{itemize}\RTList{}
+			\justifying%
+			\item برای محاسبه تاخیر نیاز به مدل‌سازی می‌باشد.
+			\item می‌توان تاخیر را ثابت فرض کرده یا آن را به صورت معین در نظر گرفت.
+			\item تاخیر \textcolor{green}{تصادفی}
+			\begin{itemize}\RTList{}
+				\item تئوری صف
+				\item \textcolor{orange}{\lr{Network Calculus}}
+			\end{itemize}
 		\end{itemize}
 	\end{frame}
 
@@ -362,9 +376,6 @@
 				\item به اشتراک گذاری نمونه‌ها
 				\item گسترش عرضی و طولی
 				\item عدم توانایی در نظر گرفتن همه این شرایط در مساله‌ی بهینه‌سازی
-
-
-
 		\end{itemize}
 	\end{frame}
 
@@ -373,7 +384,7 @@
 	\section{مراجع}
 
 	%-------------------------------------------------------------------------------
-	\begin{frame}{}
+	\begin{frame}[allowframebreaks]
 		\begin{latin}
 		\printbibliography%
 		\end{latin}
