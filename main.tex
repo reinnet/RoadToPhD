@@ -83,7 +83,7 @@
 \setbeamertemplate{frametitle continuation}{\insertcontinuationcount}
 
 %---------------------------------------------------------------------------------
-\title{نیازمندی کیفیت سرویس در کارکردهای مجازی شبکه}
+\title{مجازی‌سازی قطعی کارکردهای شبکه}
 \subtitle{}
 \author{پرهام الوانی}
 \institute{%
@@ -142,7 +142,7 @@
 	\end{frame}
 
 	%-------------------------------------------------------------------------------
-	\section{مقدمه}
+	\section{مجازی‌سازی کارکردهای شبکه}
 
 	%-------------------------------------------------------------------------------
 	\begin{frame}{شبکه‌های سنتی}
@@ -341,11 +341,74 @@
 	\end{frame}
 
 	%-------------------------------------------------------------------------------
-	\begin{frame}{شبکه‌های قطعی}
+	\section{شبکه‌های قطعی}
+
+	%-------------------------------------------------------------------------------
+	\begin{frame}{مقدمه}
 		\begin{itemize}\RTList{}
 			\justifying%
-			\item \textcolor{green}{Deterministic Networks}
-		  	\item \textcolor{orange}{تضمین} یک کران بالا برای تاخیر
+			\item حضور کاربردهای بلادرنگ بسیار حساس به تاخیر و خرابی
+			\begin{itemize}\RTList{}
+			  	\item مهاجرت از شبکه‌های خاص‌منظوره به شبکه‌های \lr{IP}
+				\item تاخیر قطعی در مقابل تاخیر احتمالی
+			\end{itemize}
+			\item عدم قطعیت ذاتی شبکه‌های فعلی
+			\begin{itemize}\RTList{}
+				\item الگوریتم‌های زمان‌بندی
+				\item ازدحام
+				\item خرابی
+				\item ...
+			\end{itemize}
+			\item نیاز به ایجاد قطعیت در معماری شبکه
+		\end{itemize}
+	\end{frame}
+
+	%-------------------------------------------------------------------------------
+	\begin{frame}{شبکه‌‌سازی حساس به زمان}
+		\begin{itemize}\RTList{}
+			\justifying%
+			\item کارگروه \lr{IEEE 802.1 TSN}
+			\item تمرکز بر لایه پیوند داده
+			\item جریان \lr{TSN}: یک ارتباط شبکه‌ای تک‌پخشی یا چند‌پخشی از یک ایستگاه انتهایی به یک ایستگاه انتهایی دیگر
+			\begin{itemize}\begin{latinitems}
+				\item Flow Concept
+				\item Flow Synchronization
+				\item Flow Management
+				\item Flow Control
+				\item Flow Integrity
+			\end{latinitems}\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	%-------------------------------------------------------------------------------
+	\begin{frame}{شبکه‌سازی قطعی}
+		\begin{itemize}\RTList{}
+			\justifying%
+			\item کارگروه \lr{IETF DetNet}
+			\item تمرکز بر لایه شبکه
+			\item جریان‌های \lr{DetNet} بر اساس کلاس‌های کیفیت سرویس مشخص می‌شوند.
+			\item اهداف
+			\begin{itemize}\RTList{}
+				\item کران معین برای تاخیر
+				\item کران معین تغییرات تاخیر
+				\item کمترین میزان از دست رفتن بسته
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	%-------------------------------------------------------------------------------
+	\begin{frame}{معماری شبکه‌سازی قطعی}
+		\begin{itemize}\RTList{}
+			\justifying%
+			\item مورد
+		\end{itemize}
+	\end{frame}
+
+	%-------------------------------------------------------------------------------
+	\begin{frame}{آشنایی با \lr{Network Calculus}}
+		\begin{itemize}\RTList{}
+			\justifying%
+			\item مورد
 		\end{itemize}
 	\end{frame}
 
@@ -401,6 +464,9 @@
 				\item عدم توانایی در نظر گرفتن همه این شرایط در مساله‌ی بهینه‌سازی
 		\end{itemize}
 	\end{frame}
+
+	%-------------------------------------------------------------------------------
+	\section{مساله‌ی پیشنهادی}
 
 	%-------------------------------------------------------------------------------
 	\begin{frame}[allowframebreaks]{مراجع}
