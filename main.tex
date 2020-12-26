@@ -1,6 +1,6 @@
 % !TeX TS-program = xelatex
 
-\documentclass{beamer}
+\documentclass[dvipsnames]{beamer}
 \usetheme{metropolis}
 
 \usepackage{multicol}
@@ -17,13 +17,6 @@
 \usepackage{xepersian}
 \settextfont{Vazir}
 \setlatintextfont{Roboto}
-
-%---------------------------------------------------------------------------------
-% Colors
-%---------------------------------------------------------------------------------
-\definecolor{orange}{RGB}{255, 165, 0}
-\definecolor{green}{RGB}{124, 252, 0}
-\definecolor{cyna}{RGB}{0, 255, 255}
 
 %---------------------------------------------------------------------------------
 % Seetings to force Beamer works with Xepersian and RTL typesetting
@@ -150,16 +143,16 @@
 			\justifying
 			\item
 						یک سرویس شبکه به صورت تعدادی
-						\textcolor{orange}{کارکرد مشخص}
+						\textcolor{Orange}{کارکرد مشخص}
 						که ترافیک با
-						\textcolor{orange}{ترتیب مشخصی}
+						\textcolor{Orange}{ترتیب مشخصی}
 						از آن ها عبور می‌کند، تعریف می‌شود.
 			\item
 						کارکردهای شبکه به صورت سخت‌افزار و نرم‌افزار اختصاصی تهیه شده
 						از سازندگان مختلف استفاده می‌شوند.
 			\item
-						کارکردها باید در \textcolor{green}{مکان} مناسب در شبکه قرار گیرند و ترافیک به سمت
-						آن‌ها \textcolor{green}{هدایت} شود.
+						کارکردها باید در \textcolor{LimeGreen}{مکان} مناسب در شبکه قرار گیرند و ترافیک به سمت
+						آن‌ها \textcolor{LimeGreen}{هدایت} شود.
 		\end{itemize}
 	\end{frame}
 
@@ -169,11 +162,11 @@
 			\justifying
 			\item
 						افزایش نیازمندی به سرویس‌های
-						\textcolor{orange}{متنوع}
+						\textcolor{Orange}{متنوع}
 						با
-						\textcolor{green}{عمرکوتاه}
+						\textcolor{LimeGreen}{عمرکوتاه}
 						و
-						\textcolor{cyna}{نرخ بالای ترافیک}
+						\textcolor{Cyan}{نرخ بالای ترافیک}
 						\begin{itemize}\RTList{}
 							\item خریداری، انبارداری و استقرار سخت‌افزارهای اختصاصی
 							\item افزایش هزینه‌های خرید، آموزش و انبارداری
@@ -233,7 +226,7 @@
 			\item زنجیره‌سازی کارکرد سرویس
 						\begin{itemize}\RTList{}
 							\item امکان تعریف زنجیره کارکردها به صورت پویا و بدون تغییر در زیرساخت فیزیکی
-							\item قابل اجرا بر بستر \textcolor{green}{شبکه‌های سنتی} یا \textcolor{orange}{نرم‌افزار بنیان}
+							\item قابل اجرا بر بستر \textcolor{LimeGreen}{شبکه‌های سنتی} یا \textcolor{Orange}{نرم‌افزار بنیان}
 							\item \lr{RFC 7665}
 						\end{itemize}
 		\end{itemize}
@@ -299,9 +292,9 @@
 							\item وجود جواب با برآورده شدن محدودیت‌های نودها و لینک‌ها
 							\item \lr{NP-Hard}
 						\end{itemize}
-			\item \textcolor{green}{کیفیت سرویس}
+			\item \textcolor{LimeGreen}{کیفیت سرویس}
 						\begin{itemize}\RTList{}
-							\item \textcolor{orange}{تاخیر}
+							\item \textcolor{Orange}{تاخیر}
 						\begin{itemize}\RTList{}
 							\item انتشار
 							\item انتقال
@@ -314,21 +307,7 @@
 	\end{frame}
 
 	%-------------------------------------------------------------------------------
-	\begin{frame}{مدل‌سازی}
-		\begin{itemize}\RTList{}
-			\justifying%
-			\item برای محاسبه تاخیر نیاز به مدل‌سازی می‌باشد.
-			\item می‌توان تاخیر را ثابت فرض کرده یا آن را به صورت معین در نظر گرفت.
-			\item تاخیر \textcolor{green}{تصادفی}
-			\begin{itemize}\RTList{}
-				\item تئوری صف
-				\item \textcolor{orange}{\lr{Network Calculus}}
-			\end{itemize}
-		\end{itemize}
-	\end{frame}
-
-	%-------------------------------------------------------------------------------
-	\begin{frame}{اهمیت}
+	\begin{frame}{اهمیت تاخیر}
 		\begin{itemize}\RTList{}
 			\justifying%
 			\item کیفیت سرویس انتها به انتها یک زنجیره در واقع معیار کارآیی است که توسط کاربران احساس می‌شود.
@@ -339,6 +318,21 @@
 			\end{itemize}
 		\end{itemize}
 	\end{frame}
+
+	%-------------------------------------------------------------------------------
+	\begin{frame}{مدل‌سازی تاخیر}
+		\begin{itemize}\RTList{}
+			\justifying%
+			\item برای محاسبه تاخیر نیاز به مدل‌سازی می‌باشد.
+			\item می‌توان تاخیر را ثابت فرض کرده یا آن را به صورت معین در نظر گرفت.
+			\item تاخیر \textcolor{LimeGreen}{تصادفی}
+			\begin{itemize}\RTList{}
+				\item تئوری صف: حالت میانه را پیدا می‌کند.
+				\item \textcolor{Orange}{\lr{Network Calculus}}
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
 
 	%-------------------------------------------------------------------------------
 	\section{شبکه‌های قطعی}
@@ -364,7 +358,7 @@
 	\end{frame}
 
 	%-------------------------------------------------------------------------------
-	\begin{frame}{شبکه‌‌سازی حساس به زمان}
+	\begin{frame}{شبکه‌‌سازی حساس به زمان \lr{(Time Sensitive Networking)}}
 		\begin{itemize}\RTList{}
 			\justifying%
 			\item کارگروه \lr{IEEE 802.1 TSN}
@@ -381,7 +375,7 @@
 	\end{frame}
 
 	%-------------------------------------------------------------------------------
-	\begin{frame}{شبکه‌سازی قطعی}
+	\begin{frame}{شبکه‌سازی قطعی (\lr{Deterministic Networking})}
 		\begin{itemize}\RTList{}
 			\justifying%
 			\item کارگروه \lr{IETF DetNet}
@@ -439,7 +433,7 @@
 	%-------------------------------------------------------------------------------
 	\begin{frame}{معماری شبکه‌سازی قطعی}
 		\begin{center}\begin{figure}
-			\includegraphics[scale=0.3]{images/detnet-stack.png}
+			\includegraphics[scale=0.4]{images/detnet-stack.png}
 			\caption{معماری پشته شبکه‌های قطعی}
 		\end{figure}\end{center}
 	\end{frame}
@@ -461,10 +455,10 @@
 	\begin{frame}{آشنایی با \lr{Network Calculus}}
 		\begin{itemize}\RTList{}
 			\justifying%
-		  \item \textcolor{green}{منحنی ورودی،}
+		  \item \textcolor{LimeGreen}{منحنی ورودی،}
 				جریان \(R\) با \( \alpha(.) \) محدود شده است.
 			\[ R(t) - R(s) \le \alpha(t - s) \]
-		  \item \textcolor{orange}{منحنی سرویس}
+		  \item \textcolor{Orange}{منحنی سرویس}
 				برای جریان وروردی \(R\) و جریان خروجی \(R^{*}\) برابر با \(b\):
 			\[ R^{*} \ge R \otimes b \]
 		\end{itemize}
