@@ -107,4 +107,63 @@
   booktitle = {2017 5th International Conference on Future Internet of Things and Cloud Workshops ({FiCloudW})}
 }
 
- @InProceedings{pmlr-v119-tang20a, title = {Reinforcement Learning for Integer Programming: Learning to Cut}, author = {Tang, Yunhao and Agrawal, Shipra and Faenza, Yuri}, booktitle = {Proceedings of the 37th International Conference on Machine Learning}, pages = {9367--9376}, year = {2020}, editor = {Hal Daumé III and Aarti Singh}, volume = {119}, series = {Proceedings of Machine Learning Research}, month = {13--18 Jul}, publisher = {PMLR}, pdf = {http://proceedings.mlr.press/v119/tang20a/tang20a.pdf}, url = { http://proceedings.mlr.press/v119/tang20a.html }, abstract = {Integer programming is a general optimization framework with a wide variety of applications, e.g., in scheduling, production planning, and graph optimization. As Integer Programs (IPs) model many provably hard to solve problems, modern IP solvers rely on heuristics. These heuristics are often human-designed, and tuned over time using experience and data. The goal of this work is to show that the performance of those solvers can be greatly enhanced using reinforcement learning (RL). In particular, we investigate a specific methodology for solving IPs, known as the Cutting Plane Method. This method is employed as a subroutine by all modern IP solvers. We present a deep RL formulation, network architecture, and algorithms for intelligent adaptive selection of cutting planes (aka cuts). Across a wide range of IP tasks, we show that our trained RL agent significantly outperforms human-designed heuristics, and effectively generalizes to larger instances and across IP problem classes. The trained agent is also demonstrated to benefit the popular downstream application of cutting plane methods in Branch-and-Cut algorithm, which is the backbone of state-of-the-art commercial IP solvers.} }
+@InProceedings{pmlr-v119-tang20a,
+        title = {Reinforcement Learning for Integer Programming: Learning to Cut},
+        author = {Tang, Yunhao and Agrawal, Shipra and Faenza, Yuri},
+        booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+        pages = {9367--9376},
+        year = {2020},
+        editor = {Hal Daumé III and Aarti Singh},
+        volume = {119},
+        series = {Proceedings of Machine Learning Research},
+        month = {13--18 Jul},
+        publisher = {PMLR},
+        pdf = {http://proceedings.mlr.press/v119/tang20a/tang20a.pdf},
+        url = { http://proceedings.mlr.press/v119/tang20a.html },
+        abstract = {Integer programming is a general optimization framework with a wide variety of applications, e.g., in scheduling, production planning, and graph optimization. As Integer Programs (IPs) model many provably hard to solve problems, modern IP solvers rely on heuristics. These heuristics are often human-designed, and tuned over time using experience and data. The goal of this work is to show that the performance of those solvers can be greatly enhanced using reinforcement learning (RL). In particular, we investigate a specific methodology for solving IPs, known as the Cutting Plane Method. This method is employed as a subroutine by all modern IP solvers. We present a deep RL formulation, network architecture, and algorithms for intelligent adaptive selection of cutting planes (aka cuts). Across a wide range of IP tasks, we show that our trained RL agent significantly outperforms human-designed heuristics, and effectively generalizes to larger instances and across IP problem classes. The trained agent is also demonstrated to benefit the popular downstream application of cutting plane methods in Branch-and-Cut algorithm, which is the backbone of state-of-the-art commercial IP solvers.}
+}
+
+@misc{rfc8938,
+	series =	{Request for Comments},
+	number =	8938,
+	howpublished =	{RFC 8938},
+	publisher =	{RFC Editor},
+	doi =		{10.17487/RFC8938},
+	url =		{https://rfc-editor.org/rfc/rfc8938.txt},
+        author =	{Balazs Varga and János Farkas and Lou Berger and Andrew G. Malis and Stewart Bryant},
+	title =		{{Deterministic Networking (DetNet) Data Plane Framework}},
+	pagetotal =	22,
+	year =		2020,
+	month =		nov,
+	abstract =	{This document provides an overall framework for the Deterministic Networking (DetNet) data plane. It covers concepts and considerations that are generally common to any DetNet data plane specification. It describes related Controller Plane considerations as well.},
+}
+
+@misc{rfc8655,
+	series =	{Request for Comments},
+	number =	8655,
+	howpublished =	{RFC 8655},
+	publisher =	{RFC Editor},
+	doi =		{10.17487/RFC8655},
+	url =		{https://rfc-editor.org/rfc/rfc8655.txt},
+        author =	{Norman Finn and Pascal Thubert and Balazs Varga and János Farkas},
+	title =		{{Deterministic Networking Architecture}},
+	pagetotal =	38,
+	year =		2019,
+	month =		oct,
+	abstract =	{This document provides the overall architecture for Deterministic Networking (DetNet), which provides a capability to carry specified unicast or multicast data flows for real-time applications with extremely low data loss rates and bounded latency within a network domain. Techniques used include 1) reserving data-plane resources for individual (or aggregated) DetNet flows in some or all of the intermediate nodes along the path of the flow, 2) providing explicit routes for DetNet flows that do not immediately change with the network topology, and 3) distributing data from DetNet flow packets over time and/or space to ensure delivery of each packet's data in spite of the loss of a path. DetNet operates at the IP layer and delivers service over lower-layer technologies such as MPLS and Time- Sensitive Networking (TSN) as defined by IEEE 802.1.},
+}
+@misc{rfc8939,
+	series =	{Request for Comments},
+	number =	8939,
+	howpublished =	{RFC 8939},
+	publisher =	{RFC Editor},
+	doi =		{10.17487/RFC8939},
+	url =		{https://rfc-editor.org/rfc/rfc8939.txt},
+        author =	{Balazs Varga and János Farkas and Lou Berger and Don Fedyk and Stewart Bryant},
+	title =		{{Deterministic Networking (DetNet) Data Plane: IP}},
+	pagetotal =	21,
+	year =		2020,
+	month =		nov,
+	abstract =	{This document specifies the Deterministic Networking (DetNet) data plane operation for IP hosts and routers that provide DetNet service to IP-encapsulated data. No DetNet-specific encapsulation is defined to support IP flows; instead, the existing IP-layer and higher-layer protocol header information is used to support flow identification and DetNet service delivery. This document builds on the DetNet architecture (RFC 8655) and data plane framework (RFC 8938).},
+}
+
