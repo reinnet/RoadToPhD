@@ -465,16 +465,42 @@
 			\[ R(t), non-decreasing, R(0) = 0 \]
 		\end{itemize}
 		\begin{center}\begin{figure}
-			\includegraphics[scale=0.4]{images/flow-models.png}
+			\centering
+			\includegraphics[scale=0.3]{images/flow-models.png}
 			\caption{انواع جریان‌ها}
 		\end{figure}\end{center}
 	\end{frame}
 
 	%-------------------------------------------------------------------------------
 	\begin{frame}{آشنایی با \lr{Network Calculus}}
+		\begin{center}\begin{figure}
+			\centering
+			\includegraphics[scale=0.2]{images/system.png}
+			\caption{معماری سیستم}
+		\end{figure}\end{center}
+
+		\begin{center}\begin{figure}
+			\centering
+			\includegraphics[scale=0.3]{images/curve.png}
+			\caption{جریان ورودی و خروجی}
+		\end{figure}\end{center}
+	\end{frame}
+
+	%-------------------------------------------------------------------------------
+	\begin{frame}{آشنایی با \lr{Network Calculus}}
+		\begin{itemize}\RTList{}
+		  \item اندازه بافر
+				\[ backlog(t) = R(t) - R^{*}(t) \]
+		  \item تاخیر
+				\[ d(t) = inf \{ d | R(t) \le R^{*}(t + d) \} \]
+		\end{itemize}
+	\end{frame}
+
+	%-------------------------------------------------------------------------------
+	\begin{frame}{آشنایی با \lr{Network Calculus}}
 		\begin{itemize}\RTList{}
 			\justifying%
-			\item دیود \((R \cup +\infty, \wedge, +)\)
+			\item \((R \cup +\infty, \wedge, +)\)
 			\item جمع تبدیل به محاسبه‌ی \lr{infimum} می‌شود.
 			\item ضرب به جمع تبدیل می‌شود.
 			\[ (3\wedge4) + 5 = (3 + 5) \wedge (4 + 5) = 8 \wedge 9 = 8 \]
@@ -497,6 +523,14 @@
 		\end{itemize}
 	\end{frame}
 
+	%-------------------------------------------------------------------------------
+	\begin{frame}{آشنایی با \lr{Network Calculus}}
+		\begin{itemize}\RTList{}
+			\justifying%
+			\item منحنی ورودی برای یک سطل سوراخ دار
+			\[ \alpha(t) = rt + b \]
+		\end{itemize}
+	\end{frame}
 	%-------------------------------------------------------------------------------
 	\section{مرور ادبیات}
 
