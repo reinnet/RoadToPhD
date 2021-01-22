@@ -1,16 +1,14 @@
 # How to use NFV Quality of Service for your PhD thesis?
 
 ## Introduction
+
 Here, I want to summarize my experiences and reading list that I use to find a problem and provide an abstraction about the way to solve it as a Ph.D. Thesis.
+In the first place I have started with some concepts as follow:
 
-## Reading List
-### Surveys
-- ![](https://img.shields.io/badge/status-in--progress-yellow?style=flat-square) [Ultra-Low Latency (ULL) Networks: The IEEE TSN and IETF DetNet Standards and Related 5G ULL Research](https://doi.org/10.1109/COMST.2018.2869350)
-- ![](https://img.shields.io/badge/status-done-green?style=flat-square) [Introduction to Time-Sensitive Networking](https://doi.org/10.1109/MCOMSTD.2018.1700076)
+- Determininstic Networking
+- NFV
+- Optimization
+- Reinforcement Learning
 
-### NFV/SDN
-- ![](https://img.shields.io/badge/status-in--progress-yellow?style=flat-square) [Deterministic Quality of Service Guarantee for Dynamic Service Chaining in Software Defined Networking
-](https://doi.org/10.1109/TNSM.2017.2758328)
-
-- ![](https://img.shields.io/badge/status-in--progress-yellow?style=flat-square) [Recent Advances of Resource Allocation in Network Function Virtualization
-](https://doi.org/10.1109/TPDS.2020.3017001)
+Then I choose to solve an optimization problem with reinforcement learning for considering the ULL funcions in NFV.
+At 23 Jan 2021 I have a meeting as an qualification exam for presenting my problem.
