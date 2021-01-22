@@ -347,6 +347,7 @@
 			\justifying%
 			\item حضور کاربردهای بلادرنگ بسیار حساس به تاخیر و خرابی
 			\begin{itemize}\RTList{}
+				\item High-Definition Multimedia Interface (HDMI), Controller Area Network (CAN bus), etc.
 			  	\item مهاجرت از شبکه‌های خاص‌منظوره به شبکه‌های \lr{IP}
 				\item تاخیر قطعی در مقابل تاخیر احتمالی
 			\end{itemize}
@@ -368,14 +369,18 @@
 			\item کارگروه \lr{IEEE 802.1 TSN}
 			\item تمرکز بر لایه پیوند داده
 			\item جریان \lr{TSN}: یک ارتباط شبکه‌ای تک‌پخشی یا چند‌پخشی از یک ایستگاه انتهایی به یک ایستگاه انتهایی دیگر
-			\begin{itemize}\begin{latinitems}
-				\item Flow Concept
-				\item Flow Synchronization
-				\item Flow Management
-				\item Flow Control
-				\item Flow Integrity
-			\end{latinitems}\end{itemize}
 		\end{itemize}
+	\end{frame}
+
+	%-------------------------------------------------------------------------------
+	\begin{frame}{شبکه‌‌سازی حساس به زمان \lr{(Time Sensitive Networking)}}
+		\begin{itemize}\begin{latinitems}
+			\item Flow Concept: A TSN flow (data link flow) is characterized by the QoS properties.
+			\item Flow Synchronization: IEEE 802.1AS Time Synchronization for Time-Sensitive Applications
+			\item Flow Management: Enables operators to dynamically discover, configure, monitor, and report bridge and end station capabilities.
+			\item Flow Control: Specifies how frames belonging to a prescribed traffic class are handled within TSN enabled bridges.
+			\item Flow Integrity: Deliver frames regardless of the dynamic network conditions, including physical breakage and link failures.
+		\end{latinitems}\end{itemize}
 	\end{frame}
 
 	%-------------------------------------------------------------------------------
@@ -384,7 +389,10 @@
 			\justifying%
 			\item کارگروه \lr{IETF DetNet}
 			\item تمرکز بر لایه شبکه
+			\item برای شبکه‌هایی با مدیریت مشترک یا تحت مدیریت گروه کوچک
+			\item شبکه‌سازی قطعی نمونه‌ای از سرویس گارانتی‌شده \lr{IntServ} می‌باشد.
 			\item جریان‌های \lr{DetNet} بر اساس کلاس‌های کیفیت سرویس مشخص می‌شوند.
+			\item در نظر گرفتن جریان‌های \lr{DetNet} در کنار جریان‌های \lr{non-DetNet}
 			\item اهداف
 			\begin{itemize}\RTList{}
 				\item کران معین برای تاخیر
@@ -392,6 +400,13 @@
 				\item کمترین میزان از دست رفتن بسته
 			\end{itemize}
 		\end{itemize}
+	\end{frame}
+
+	%-------------------------------------------------------------------------------
+	\begin{frame}{شبکه‌سازی قطعی (\lr{Deterministic Networking})}
+	  \begin{latin}
+		\fullcite{rfc8655}
+	  \end{latin}
 	\end{frame}
 
 	%-------------------------------------------------------------------------------
@@ -712,7 +727,7 @@
 	\begin{frame}{مساله‌ی پیشنهادی}
 		\begin{block}{}
 			\centering
-			جایگذاری زنجیره‌هایی با کارکردهای قطعی در زیرساخت مجازی‌سازی شبکه
+			جایگذاری قطعی زنجیره‌های کارکرد در زیرساخت مجازی‌سازی شبکه
 		\end{block}
 	\end{frame}
 
