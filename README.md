@@ -10,8 +10,8 @@ In the first place I have started with some concepts as follow:
 - Optimization
 - Reinforcement Learning
 
-Then I choose to solve an optimization problem with reinforcement learning for considering the ULL funcions in NFV.
-At 23 Jan 2021 I have a meeting as an qualification exam for presenting my problem.
+Then I choose to solve an optimization problem with reinforcement learning for considering the URLL funcions in NFV.
+At 23 Jan 2021 I had a meeting as an qualification exam for presenting my problem and its roadmap.
 
 ## Verbal Qualification Exam
 
