@@ -18,9 +18,12 @@ At 23 Jan 2021 I had a meeting as an qualification exam for presenting my proble
 These points are discuss in the meeting:
 
 - Problem definition must be S.M.A.R.T
+- Consider more theoritical concepts in your research subject
 - Access layer delay is important because you are mentioning the end-to-end delay
 - Ultra Reliable and Low Latency Services concepts are useful
 - Pakcet replication and reliability
 - Cite https://ieeexplore.ieee.org/document/8458130
 - Determininstic as an adjective is okay?
 - Network slicing literature
+
+The total grade of this meeting and the paper examn is 17.25.
