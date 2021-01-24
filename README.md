@@ -12,3 +12,15 @@ In the first place I have started with some concepts as follow:
 
 Then I choose to solve an optimization problem with reinforcement learning for considering the ULL funcions in NFV.
 At 23 Jan 2021 I have a meeting as an qualification exam for presenting my problem.
+
+## Verbal Qualification Exam
+
+These points are discuss in the meeting:
+
+- Problem definition must be S.M.A.R.T
+- Access layer delay is important because you are mentioning the end-to-end delay
+- Ultra Reliable and Low Latency Services concepts are useful
+- Pakcet replication and reliability
+- Cite https://ieeexplore.ieee.org/document/8458130
+- Determininstic as an adjective is okay?
+- Network slicing literature
