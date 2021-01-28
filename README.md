@@ -27,3 +27,10 @@ These points are discuss in the meeting:
 - Network slicing literature
 
 The total grade of this meeting and the paper examn is 17.25.
+
+## Notes
+
+These ideas are from myself and worth more investigation.
+
+- Use veterbi algorithm on partially ordered chains
+- Consider Shapers in Flow Control of the TSN and DetNet
