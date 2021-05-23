@@ -26,7 +26,7 @@ These points are discuss in the meeting:
 - Determininstic as an adjective is okay?
 - Network slicing literature
 
-The total grade of this meeting and the paper examn is 17.25.
+The total grade of this meeting and the paper exam is 17.25.
 
 ## Notes
 
